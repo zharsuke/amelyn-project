@@ -1,0 +1,223 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Dashboard Admin</title>
+</head>
+
+<body>
+
+    <div class="side-bar">
+        <div class="body">
+            <div class="list list-title"><img class="ctn" src="./../../assets amelyn collection/logo (2).png">
+                <div class="text ctn ctn-t">Amelyn Collection</div>
+
+            </div>
+            <div class="list list-content" id="dashboard"><img class="ctn"
+                    data-src="./../../assets amelyn collection/dashboard"
+                    src="./../../assets amelyn collection/dashboard-grey.png">
+                <div class="text ctn ctn-t">Dashboard</div>
+            </div>
+            <div class="list list-content" id="product"><img class="ctn"
+                    data-src="./../../assets amelyn collection/clothes"
+                    src="./../../assets amelyn collection/clothes-grey.png">
+                <div class="text ctn ctn-t">Product</div>
+            </div>
+            <div class="list list-content" id="order"><img class="ctn" data-src="./../../assets amelyn collection/order"
+                    src="./../../assets amelyn collection/order-grey.png">
+                <div class="text ctn ctn-t">Order</div>
+            </div>
+            <div class="list list-content" id="return"><img class="ctn"
+                    data-src="./../../assets amelyn collection/history"
+                    src="./../../assets amelyn collection/history-grey.png">
+                <div class="text ctn ctn-t">Product Return</div>
+            </div>
+        </div>
+        <div class="end">
+            <button class="btn btn-logout">Logout</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <div class="title">
+                <h2>Dashboard</h2>
+            </div>
+            <div class="box-ctn">
+                <div class="card" id="totalUser"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./script.js"></script>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Dashboard Admin</title>
+</head>
+
+<body>
+    <div class="side-bar-btn" data-menu="off" data-src="./../../assets amelyn collection/"><img
+            src="./../../assets amelyn collection/menu.png" alt=""></div>
+    <div class="div">
+        <div class="div-2">
+            <div class="side-bar">
+                <div class="body">
+                    <div class="list list-title"><img class="ctn" src="./../../assets amelyn collection/logo (2).png">
+                        <div class="text ctn ctn-t">Amelyn Collection</div>
+
+                    </div>
+                    <div onclick="location.href = '#'" class="list list-content actived-list" id="dashboard"><img
+                            class="ctn" data-src="./../../assets amelyn collection/dashboard"
+                            src="./../../assets amelyn collection/dashboard-grey.png">
+                        <div class="text ctn ctn-t">Dashboard</div>
+                    </div>
+                    <div onclick="location.href = '#'" class="list list-content" id="product"><img class="ctn"
+                            data-src="./../../assets amelyn collection/clothes"
+                            src="./../../assets amelyn collection/clothes-grey.png">
+                        <div class="text ctn ctn-t">Product</div>
+                    </div>
+                    <div onclick="location.href = '#'" class="list list-content" id="order"><img class="ctn"
+                            data-src="./../../assets amelyn collection/order"
+                            src="./../../assets amelyn collection/order-grey.png">
+                        <div class="text ctn ctn-t">Order</div>
+                    </div>
+                    <div onclick="location.href = '#'" class="list list-content" id="return"><img class="ctn"
+                            data-src="./../../assets amelyn collection/history"
+                            src="./../../assets amelyn collection/history-grey.png">
+                        <div class="text ctn ctn-t">Product Return</div>
+                    </div>
+                </div>
+                <div class="end">
+                    <button class="btn btn-logout" onclick="location.href = '#'">Logout</button>
+                </div>
+            </div>
+            <!-- <div class="column">
+                <div class="div-3">
+                    <div class="div-4">
+                        <img loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/67e33cb48deef9bfacac27690ff64898deffdf670b7bac430c9d28f57b327ef4?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&"
+                            class="img" />
+                        <div class="div-5">Amelyn Collection</div>
+                    </div>
+                    <div class="div-6">
+                        <div class="div-7">
+                            <img loading="lazy"
+                                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/1b93a271500affccd9cb64a8d8619b3e56e31920a55ce0fbe36bde88ed99520c?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/1b93a271500affccd9cb64a8d8619b3e56e31920a55ce0fbe36bde88ed99520c?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/1b93a271500affccd9cb64a8d8619b3e56e31920a55ce0fbe36bde88ed99520c?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/1b93a271500affccd9cb64a8d8619b3e56e31920a55ce0fbe36bde88ed99520c?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/1b93a271500affccd9cb64a8d8619b3e56e31920a55ce0fbe36bde88ed99520c?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/1b93a271500affccd9cb64a8d8619b3e56e31920a55ce0fbe36bde88ed99520c?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/1b93a271500affccd9cb64a8d8619b3e56e31920a55ce0fbe36bde88ed99520c?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/1b93a271500affccd9cb64a8d8619b3e56e31920a55ce0fbe36bde88ed99520c?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&"
+                                class="img-2" />
+                            <div class="div-8">Dashboard</div>
+                        </div>
+                        <div class="div-9">
+                            <img loading="lazy"
+                                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/5ab8dcfacafc3d3ef79853490d1f96c3485d7fe9ba36dbd45036ce654b4f6d6e?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/5ab8dcfacafc3d3ef79853490d1f96c3485d7fe9ba36dbd45036ce654b4f6d6e?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/5ab8dcfacafc3d3ef79853490d1f96c3485d7fe9ba36dbd45036ce654b4f6d6e?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/5ab8dcfacafc3d3ef79853490d1f96c3485d7fe9ba36dbd45036ce654b4f6d6e?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/5ab8dcfacafc3d3ef79853490d1f96c3485d7fe9ba36dbd45036ce654b4f6d6e?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/5ab8dcfacafc3d3ef79853490d1f96c3485d7fe9ba36dbd45036ce654b4f6d6e?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/5ab8dcfacafc3d3ef79853490d1f96c3485d7fe9ba36dbd45036ce654b4f6d6e?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/5ab8dcfacafc3d3ef79853490d1f96c3485d7fe9ba36dbd45036ce654b4f6d6e?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&"
+                                class="img-3" />
+                            <div class="div-10">Product</div>
+                        </div>
+                        <div class="div-11">
+                            <img loading="lazy"
+                                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/8c004b8e61a87adcf469cb57135f7405ec5599856d8fd6567b58d7b1c806868f?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/8c004b8e61a87adcf469cb57135f7405ec5599856d8fd6567b58d7b1c806868f?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/8c004b8e61a87adcf469cb57135f7405ec5599856d8fd6567b58d7b1c806868f?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/8c004b8e61a87adcf469cb57135f7405ec5599856d8fd6567b58d7b1c806868f?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/8c004b8e61a87adcf469cb57135f7405ec5599856d8fd6567b58d7b1c806868f?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/8c004b8e61a87adcf469cb57135f7405ec5599856d8fd6567b58d7b1c806868f?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/8c004b8e61a87adcf469cb57135f7405ec5599856d8fd6567b58d7b1c806868f?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/8c004b8e61a87adcf469cb57135f7405ec5599856d8fd6567b58d7b1c806868f?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&"
+                                class="img-4" />
+                            <div class="div-12">Order</div>
+                        </div>
+                        <div class="div-13">
+                            <img loading="lazy"
+                                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/06ad9afefa5a9304c73bf37ea3c9f2b728c43bf32737e8c56bd782f4d50afe3c?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/06ad9afefa5a9304c73bf37ea3c9f2b728c43bf32737e8c56bd782f4d50afe3c?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/06ad9afefa5a9304c73bf37ea3c9f2b728c43bf32737e8c56bd782f4d50afe3c?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/06ad9afefa5a9304c73bf37ea3c9f2b728c43bf32737e8c56bd782f4d50afe3c?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/06ad9afefa5a9304c73bf37ea3c9f2b728c43bf32737e8c56bd782f4d50afe3c?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/06ad9afefa5a9304c73bf37ea3c9f2b728c43bf32737e8c56bd782f4d50afe3c?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/06ad9afefa5a9304c73bf37ea3c9f2b728c43bf32737e8c56bd782f4d50afe3c?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/06ad9afefa5a9304c73bf37ea3c9f2b728c43bf32737e8c56bd782f4d50afe3c?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&"
+                                class="img-5" />
+                            <div class="div-14">Product Return</div>
+                        </div>
+                        <div class="div-15">Log Out</div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="column-2">
+                <div class="div-16">
+                    <div class="div-17">Dashboard</div>
+                    <div class="div-18">
+                        <div class="div-19 dashboard-ctn">
+                            <div class="div-20 dashboard-ctn-img">
+                                <img loading="lazy"
+                                    srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/165a984cbe20c8cef3f9cc58c895caa2f327bb64e225cbb7b90d0d44183c1e8f?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/165a984cbe20c8cef3f9cc58c895caa2f327bb64e225cbb7b90d0d44183c1e8f?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/165a984cbe20c8cef3f9cc58c895caa2f327bb64e225cbb7b90d0d44183c1e8f?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/165a984cbe20c8cef3f9cc58c895caa2f327bb64e225cbb7b90d0d44183c1e8f?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/165a984cbe20c8cef3f9cc58c895caa2f327bb64e225cbb7b90d0d44183c1e8f?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/165a984cbe20c8cef3f9cc58c895caa2f327bb64e225cbb7b90d0d44183c1e8f?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/165a984cbe20c8cef3f9cc58c895caa2f327bb64e225cbb7b90d0d44183c1e8f?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/165a984cbe20c8cef3f9cc58c895caa2f327bb64e225cbb7b90d0d44183c1e8f?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&"
+                                    class="img-6" />
+                            </div>
+                            <div class="div-21">
+                                <div class="div-22">321</div>
+                                <div class="div-23">Total User</div>
+                            </div>
+                        </div>
+                        <div class="div-24 dashboard-ctn">
+                            <div class="div-25 dashboard-ctn-img">
+                                <img loading="lazy"
+                                    srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/f5c58eeffa6c7a01ae5d359142194f185a0e302dc88a1369d7c8027b4f85b2c1?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/f5c58eeffa6c7a01ae5d359142194f185a0e302dc88a1369d7c8027b4f85b2c1?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f5c58eeffa6c7a01ae5d359142194f185a0e302dc88a1369d7c8027b4f85b2c1?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/f5c58eeffa6c7a01ae5d359142194f185a0e302dc88a1369d7c8027b4f85b2c1?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/f5c58eeffa6c7a01ae5d359142194f185a0e302dc88a1369d7c8027b4f85b2c1?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f5c58eeffa6c7a01ae5d359142194f185a0e302dc88a1369d7c8027b4f85b2c1?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/f5c58eeffa6c7a01ae5d359142194f185a0e302dc88a1369d7c8027b4f85b2c1?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/f5c58eeffa6c7a01ae5d359142194f185a0e302dc88a1369d7c8027b4f85b2c1?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&"
+                                    class="img-7" />
+                            </div>
+                            <div class="div-26">
+                                <div class="div-27">2000</div>
+                                <div class="div-28">Total Product</div>
+                            </div>
+                        </div>
+                        <div class="div-29 dashboard-ctn">
+                            <div class="div-30 dashboard-ctn-img">
+                                <img loading="lazy"
+                                    srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/7293c41e0f5691b55d011201cf2f05b8d151d375a7b0157fd9430c58ba4b5f43?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/7293c41e0f5691b55d011201cf2f05b8d151d375a7b0157fd9430c58ba4b5f43?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/7293c41e0f5691b55d011201cf2f05b8d151d375a7b0157fd9430c58ba4b5f43?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/7293c41e0f5691b55d011201cf2f05b8d151d375a7b0157fd9430c58ba4b5f43?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/7293c41e0f5691b55d011201cf2f05b8d151d375a7b0157fd9430c58ba4b5f43?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/7293c41e0f5691b55d011201cf2f05b8d151d375a7b0157fd9430c58ba4b5f43?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/7293c41e0f5691b55d011201cf2f05b8d151d375a7b0157fd9430c58ba4b5f43?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/7293c41e0f5691b55d011201cf2f05b8d151d375a7b0157fd9430c58ba4b5f43?apiKey=2732a0f8ff48401b8d69d9f931cf21cc&"
+                                    class="img-8" />
+                            </div>
+                            <div class="div-31">
+                                <div class="div-32">20</div>
+                                <div class="div-33">Total Order</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div-34">
+                        <div class="div-35">
+                            <div class="column-3 col-3-4">
+                                <div class="div-36">
+                                    <div class="div-37">New Product</div>
+                                    <table class="np-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Image Product</th>
+                                                <th>Name Product</th>
+                                                <th>Description</th>
+                                                <th>Size Product</th>
+                                                <th>Price Product</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="column-4 col-3-4">
+                                <div class="div-44">
+                                    <div class="div-45">Testimoni</div>
+                                    <table class="np-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Username</th>
+                                                <th>Testimoni</th>
+                                                <th>Date</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>

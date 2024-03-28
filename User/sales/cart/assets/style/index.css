@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../../../../../Poppins/Poppins-Regular.ttf');
+}
+
+body {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.checkout-button {
+    background-color: #ffb98f;
+    color: white;
+}
+
+.checkout-button:hover {
+    color: white;
+}
+
+.cart {
+    border-radius: 10px;
+}
+
+@media (max-width: 1398px) {
+    .col-4 img {
+        width: 100%;
+    }
+    .col-2 h4 {
+        font-size: 1rem;
+    }
+
+    .col-2 p {
+        font-size: 1rem;
+    }
+
+    .col-2 button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .col-4 img {
+        width: 100%;
+    }
+    .col-2 h4 {
+        font-size: 1.2rem;
+    }
+
+    .col-2 p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .col-2 img {
+        width: 100%;
+    }
+    .col-2 h4 {
+        font-size: 0.8rem;
+    }
+
+    .col-2 p {
+        font-size: 0.8rem;
+    }
+
+    .col-2 button img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-2 img {
+        width: 100%;
+    }
+    .col-2 h4 {
+        font-size: 0.6rem;
+    }
+
+    .col-2 p {
+        font-size: 0.6rem;
+    }
+    
+    .qty {
+        margin-left: -20px;
+    }
+
+    .total {
+        margin-left: 20px;
+    }
+
+    .col-2 button img {
+        width: 10px;
+    }
+}

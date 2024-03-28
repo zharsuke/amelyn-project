@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../../../../Poppins/Poppins-Regular.ttf');
+}
+
+body {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.cart-button {
+    background-color: #9ec8b9;
+    color: white;
+    white-space: nowrap;
+}
+
+.cart-button:hover {
+    color: white;
+}
+
+.description-button {
+    background-color: #5c8374;
+    color: white;
+}
+
+.description-button:hover {
+    color: white;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.card-img-top {
+    border-radius: 10px;
+}
