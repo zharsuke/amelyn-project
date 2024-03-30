@@ -7,6 +7,10 @@ body {
     font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
+main {
+    margin-top: 75px;
+}
+
 .bg-order {
     background-color: #c9c9c9;
 }

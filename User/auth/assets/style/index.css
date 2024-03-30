@@ -8,6 +8,10 @@ body {
 }
 
 main {
+    margin-top: 75px;
+}
+
+main {
     height: 100vh;
 }
 
