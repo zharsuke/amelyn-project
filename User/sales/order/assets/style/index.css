@@ -33,6 +33,12 @@ main {
     border-radius: 10px;
 }
 
+.send-btn {
+    background-color: #9ec8b9;
+    color: white;
+
+}
+
 @media (max-width: 768px) {
     .order p {
         font-size: 0.6rem;
@@ -70,7 +76,7 @@ main {
         font-size: 0.8rem;
     }
 
-    .order a {
+    .order button {
         font-size: 0.8rem;
     }
 
