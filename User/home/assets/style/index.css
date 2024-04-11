@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../../../../Poppins/Poppins-Regular.ttf');
+}
+
+body {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+main {
+    margin-top: 75px;
+}
+
+.btn-reserved {
+    background-color: white;
+    color: #ff2876;
+}
+
+.line {
+    width: 70px;
+    height: 5px;
+    background-color: #1b4242;
+}
+
+.hero-section {
+    background-image: url('../../../../assets\ amelyn\ collection/piqsels1.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
