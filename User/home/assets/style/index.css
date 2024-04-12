@@ -30,3 +30,41 @@ main {
     color: white;
     text-align: center;
 }
+
+.hero-section h1 {
+    font-size: 7rem;
+}
+
+.hero-section h5 {
+    margin-inline: 150px;
+}
+
+.hero-section a:hover {
+    color: #ff2876;
+    background-color: white;
+}
+
+.cart-button {
+    background-color: #9ec8b9;
+    color: white;
+    white-space: nowrap;
+}
+
+.cart-button:hover {
+    background-color: #9ec8b9;
+    color: white;
+}
+
+.description-button {
+    background-color: #5c8374;
+    color: white;
+}
+
+.description-button:hover {
+    background-color: #5c8374;
+    color: white;
+}
+
+.contact {
+    margin-right: -100px;
+}
